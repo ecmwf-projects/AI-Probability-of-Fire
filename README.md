@@ -2,6 +2,7 @@
         ---------------------------------------------------------------- ECMWF ------------------------------------------------
 
 
+![POF_IN_A_BOX](https://github.com/enyfeo/POF_IN_A_BOX/blob/develop/image.jpg?raw=true)
 This repository contains three main scripts representing the end-to-end workflow for generating, training, and forecasting Probability of Fire (POF) using environmental and human
 datasets. The model framework is based around the operation Sparky-PoF system used by ECMWF.
 
