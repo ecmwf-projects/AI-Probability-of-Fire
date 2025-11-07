@@ -1,21 +1,21 @@
------------------------------------------------- Probability of Fire (POF) Model Pipeline ------------------------------------------------
-        ---------------------------------------------------------------- ECMWF ------------------------------------------------
+<p align="center">
+  <picture>
+    <img src='./images/image.png' height="120">
+  </picture>
+</p>
 
+# ECMWF - Probability of Fire (POF) Model Pipeline
 
-![POF_IN_A_BOX](https://github.com/enyfeo/POF_IN_A_BOX/blob/develop/image.png?raw=true)
 This repository contains three main scripts representing the end-to-end workflow for generating, training, and forecasting Probability of Fire (POF) using environmental and human
 datasets. The model framework is based around the operation Sparky-PoF system used by ECMWF.
 
 Creation of and use of the model can be done in three steps:
 
-1. Data Preperation
+1. Data Preperation◊
 2. Model Training
 3. Model Forecasting
 
----------------------------------------------------------------------------------------------------------------------------------------------------------
------------------------------------------------------------------- 1. Data Preperation ------------------------------------------------------------------ 
----------------------------------------------------------------------------------------------------------------------------------------------------------
-
+## 1. Data Preperation 
 
 POF_DATA_GENERATOR.py
 
@@ -45,9 +45,7 @@ Training Timeline: Defaults to all months of 2003.
 Sampling: By default, 1% of grid points containing vegetation are sampled (sample_frac and mask).
 
 
----------------------------------------------------------------------------------------------------------------------------------------------------------
------------------------------------------------------------------- 2. Model Training --------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------------------------------------------------------
+## 2. Model Training
 
 POF_TRAINER.py
 
@@ -65,9 +63,7 @@ ROC curve (POF_ROC.png) — optional and can be disabled for performance.
 The hyperparameters can and should be adjusted to suit regional needs.
 
 
----------------------------------------------------------------------------------------------------------------------------------------------------------
------------------------------------------------------------------- 3. Model Forecasting -----------------------------------------------------------------
----------------------------------------------------------------------------------------------------------------------------------------------------------
+## 3. Model Forecasting
 
 POF_FORECAST.py
 
