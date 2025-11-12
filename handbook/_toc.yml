@@ -1,0 +1,14 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: index
+
+parts:
+- caption: "Retriving data"
+  chapters:
+  - file: PoF_Data_Generator
+- caption: "Training and forecasting"
+  chapters:
+  - file: PoF_Trainer
+  - file: PoF_Forecast
