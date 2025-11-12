@@ -1,4 +1,4 @@
-![Pof-in-a-box](./PICS/PoF-in-a-box.png)
+![Pof-in-a-box](./images/PoF-in-a-box.png)
 
 __PoF in a Box provides a ready-to-run set of notebooks designed to help you get started with your own Predictability of Fire (PoF) experiments. It includes all the tools, data access, and workflows needed to explore fire activity prediction, from input preparation to model evaluation—right out of the box.__
 
@@ -14,7 +14,7 @@ These events have far-reaching consequences for both air quality and greenhouse 
 ## Traditional fire forecasting
 For nearly half a century, fire danger forecasts have relied on a method that links weather conditions with fire activity to create an index of fire risk, with the<a href="https://cwfis.cfs.nrcan.gc.ca/background/summary/fwi" target="_blank"> **Canadian Fire Weather Index (FWI)**</a>
  being the most widely used. However, this approach has its limitations. 
- ![fire-triangle](./PICS/fire-triangle.png)
+ ![fire-triangle](./images/fire-triangle.png)
  
 **A fire needs fuel**, and for wildfires that fuel is both **living** and **dead** vegetation. The abundance and arrangement of that fuel is known as the ‘**fuel bed**’. If all else is equal, the drier the fuel bed, the higher the fire risk. The FWI primarily estimates the state of fuel moisture based on meteorological conditions affecting a predetermined typical Canadian forest fuel bed. However, a typical fuel bed does not capture controls such as the moisture levels in living vegetation, the composition of vegetation types, or the actual abundance of available fuel. Consequently, the FWI tends to overestimate fire risk in areas with limited fuel. Moreover, because the FWI was originally developed for Canadian forests, its applicability becomes complex when extrapolated to different ecosystems.
 
@@ -32,7 +32,7 @@ We have developed a new tool, known as <a href="https://doi.org/10.1029/2023GL10
 ```{tip}
 A key strength of PoF is found not only in the accurate predictions but also in computational cost. The model itself is extremely cheap to run compared with more traditional physical models, which allows us to perform global 1 km forecasts.
 ```
-  ![fire-triangle](./PICS/pof.png)
+  ![fire-triangle](./images/pof.png)
 The foundation of PoF lies in its utilisation of diverse datasets, including information from the ECMWF Integrated Forecasting System (IFS), land cover data, and a <a href="https://doi.org/10.5194/bg-21-279-2024" target="_blank"> **newly developed fuel characteristic model**</a>.
 
 The training of PoF is made possible thanks to the wealth of historic observations of active fires from satellites. The model mimics what it anticipates satellites will detect in the next few days. Consequently, it could only ever hope to perform as well as the satellite, which emphasises the importance of accurate satellite data for training. 
