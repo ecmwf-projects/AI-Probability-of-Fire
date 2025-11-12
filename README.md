@@ -1,6 +1,6 @@
 <p align="center">
   <picture>
-    <img src='./images/image.png' height="180">
+    <img src='./handbook/images/image.png' height="180">
   </picture>
 </p>
 
