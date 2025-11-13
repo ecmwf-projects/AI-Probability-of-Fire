@@ -1,2 +1,5 @@
 handbook/data
 handbook/outputs
+
+# MyST build outputs
+_build
