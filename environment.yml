@@ -1,4 +1,4 @@
-name: POF_IN_A_BOX2
+name: POF_IN_A_BOX
 channels:
 - conda-forge
 - nodefaults
@@ -18,4 +18,4 @@ dependencies:
 - ipykernel
 - cftime
 - pip
-- python=3.11
+- python=3.14
