@@ -26,3 +26,4 @@ site:
   options:
      favicon: handbook/images/favicon.ico
      logo: handbook/images/image.png
+     folders: true
