@@ -16,10 +16,13 @@ project:
         - title: Retrieving data
           children:
             - file: handbook/PoF_Data_Generator.ipynb
+              title: Preparing inputs
         - title: Training and forecasting
           children:
             - file: handbook/PoF_Trainer.ipynb
+              title: PoF Trainer
             - file: handbook/PoF_Forecast.ipynb
+              title: PoF Forecast
     
 site:
   template: book-theme
