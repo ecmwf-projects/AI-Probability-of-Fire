@@ -4,16 +4,18 @@
 </picture>
 </p>
 
-
+# POF IN A BOX 
 
 __PoF in a Box provides a ready-to-run set of notebooks designed to help you get started with your own Predictability of Fire (PoF) experiments. It includes all the tools, data access, and workflows needed to explore fire activity prediction, from input preparation to model evaluation—right out of the box.__
 <div style="border: 2px solid #9fc4ae; border-radius: 8px; padding: 10px; background-color: #f8fdf9;"> <b>Before you begin:</b> Please note that the workflow presented here is not intended to reproduce the exact operational system currently running at ECMWF. Instead, it provides a simplified sequence of steps designed to help you get started.
 The notebook can only be used with past forecasts—it will generate a tool that allows you to explore and analyse previous forecast data.
-That said, we believe this provides a valuable starting point: a complete, working system built entirely from data that are publicly available through the Climate Data Store (CDS) or accessible via temporary data repositories linked within this notebook. </div>
+That said, we believe this provides a valuable starting point: a complete, working system built entirely from data that are publicly available through the Climate Data Store (CDS) or accessible via temporary data repositories linked within this notebook. 
+</div>
 
 
 
-# Wildfire prediction  
+
+## Wildfire prediction  
 
 Given their chaotic nature, how can we know when and where wildfires will occur? That is a question that has puzzled wildfire forecasters for decades and now, thanks to advances in **machine learning**, we are one step closer to answering it, although we still have some way to go.
 
@@ -26,7 +28,7 @@ For nearly half a century, fire danger forecasts have relied on a method that li
  being the most widely used. However, this approach has its limitations. 
  <p align="center">
 <picture>
-<img src='./images/fire-triangle.png' height="180">
+<img src='./images/fire-triangle.png' height="400">
 </picture>
 </p>
 
@@ -48,7 +50,7 @@ A key strength of PoF is found not only in the accurate predictions but also in 
 ```
  <p align="center">
 <picture>
-<img src='./images/pof.png' height="180">
+<img src='./images/pof.png' height="400">
 </picture>
 </p>
 
