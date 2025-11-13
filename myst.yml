@@ -15,15 +15,14 @@ project:
       children:
         - title: Retrieving data
           children:
-            - file: handbook/POF_Data_Generator.ipynb
+            - file: handbook/PoF_Data_Generator.ipynb
         - title: Training and forecasting
           children:
-            - file: handbook/POF_Trainer.ipynb
-            - file: handbook/POF_Forecast.ipynb
+            - file: handbook/PoF_Trainer.ipynb
+            - file: handbook/PoF_Forecast.ipynb
     
 site:
   template: book-theme
   options:
      favicon: handbook/images/favicon.ico
      logo: handbook/images/image.png
-     folders: true
