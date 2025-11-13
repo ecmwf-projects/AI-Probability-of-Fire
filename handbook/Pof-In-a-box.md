@@ -7,5 +7,5 @@ The notebook can only be used with past forecasts—it will generate a tool that
 That said, we believe this provides a valuable starting point: a complete, working system built entirely from data that are publicly available through the Climate Data Store (CDS) or accessible via temporary data repositories linked within this notebook.
 
 
-![](./PICS/PoF-in-a-box.png)
+<img src='./images/PoF-in-a-box.png' height="400">
 <p class="credits">CC BY-NC-SA</p>
