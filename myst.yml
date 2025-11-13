@@ -23,6 +23,6 @@ project:
     
 site:
   template: book-theme
-  # options:
-  #   favicon: favicon.ico
-  #   logo: site_logo.png
+  options:
+     favicon: handbook/images/favicon.ico
+     logo: handbook/images/image.png
