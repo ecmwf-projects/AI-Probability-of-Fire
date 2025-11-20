@@ -17,15 +17,15 @@ project:
     - title: Retrieving Data
       file: retrieving_data.md
       children:
-        - file: notebooks/POF_Data_Generator.ipynb
+        - file: POF_Data_Generator.ipynb
     - title: Training
       file: training.md
       children:
-        - file: notebooks/POF_Trainer.ipynb
+        - file: POF_Trainer.ipynb
     - title: Forecasting
       file: Forecasting.md
       children:
-        - file: notebooks/POF_Forecast.ipynb
+        - file: POF_Forecast.ipynb
 
     
 site:
