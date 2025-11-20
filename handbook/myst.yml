@@ -23,7 +23,7 @@ project:
       title: Training
       children:
         - file: POF_Trainer.ipynb
-    - file: Forecasting.md
+    - file: forecasting.md
       title: Forecasting
       children:
         - file: POF_Forecast.ipynb
