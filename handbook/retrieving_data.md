@@ -7,7 +7,6 @@ __A  data driven model needs data!__
 </div>
 
 <img src='./images/data-sources-pof.png' height="400">
-<p class="credits">CC BY-NC-SA</p>
 
 __Weather Data__
 
