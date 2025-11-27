@@ -1,4 +1,4 @@
-# Data for PoF 
+# 📦 The data behind PoF
 
 
 __A  data driven model needs data!__
@@ -6,11 +6,15 @@ __A  data driven model needs data!__
 <div style="border: 2px solid #9fc4ae; border-radius: 8px; padding: 10px; background-color: #f8fdf9;"> <b>Please note: You will not be able to reproduce the exact configuration run at ECMWF, as it uses some proprietary data that we are unable to share. However, most of the data used to train PoF are publicly available and free to use. Below, we provide guidance on the datasets we recommend for getting started on your PoF journey.
 </div>
 
-<img src='./images/data-sources-pof.png' height="400">
-<p class="credits">CC BY-NC-SA</p>
-
+<p align="center" style="margin:40px 0;">
+  <img src="./images/data-sources-pof.png"
+       alt="Data Sources for PoF"
+       style="max-width:60%; height:auto;">
+  <br>
+  <span class="credits" style="font-size:13px; color:#666;">Data sources to train the PoF </span>
+</p>
+    
 __Weather Data__
-
 
 <a href="https://doi.org/10.1175/JAMC-D-15-0297.1" target="_blank">
 In fuel-rich environments, weather is the dominant control on fire ignitions.</a>
@@ -28,7 +32,6 @@ Finally, __wind speed__ is the most dynamic and often the most dangerous factor.
 Together, these __four variables__  describe both the availability of fuel and the conditions under which it can ignite and spread. They provide a solid, intuitive foundation for understanding landscape flammability and are an excellent starting point for anyone beginning their PoF modelling journey.
 
 __Fuel Data__
-
 
 <a href="https://doi.org/10.1038/s41467-025-58097-7" target="_blank">
  In absence of any other sorce fuel is the most important control globally on fire activity.</a>
@@ -49,48 +52,31 @@ __Live Fuel Moisture Content (LFMC)__
 💦🍃 LFMC expresses how much water is contained in living vegetation relative to its dry mass. It determines how easily plants ignite and how fast a fire can spread.
 We use a semi-empirical model, trained on the Globe-LFMC in-situ dataset, to estimate daily LFMC from:
 
-1. Leaf Area Index (LAI)
-2. Soil moisture (root-weighted)
-3. Vegetation type
+🌿 **Leaf Area Index (LAI)**
 
+💧 **Soil moisture (root-weighted)**
+
+🌳 **Vegetation type**
 
 The model ensures physically realistic moisture ranges and captures seasonal vegetation responses to drought and growth cycles.
 
 __Dead Fuel Moisture Content (DFMC)__
 
 DFMC describes the moisture content of dead leaves, litter, and woody debris—fuels that respond directly to weather.
-We generalize the Nelson (2000) physical model to estimate DFMC for standard dead-fuel classes (1h, 10h, 100h, 1000h), driven by:
-
-1. Temperature
-2. Relative humidity
-3. Solar radiation
-4. Precipitation
-
-Short-lag fuels (1h, 10h) respond to fast humidity changes; long-lag fuels respond to multi-day weather patterns. DFMC for foliage and wood is derived by weighting appropriate fuel classes based on vegetation type.
-
-What the Dataset Provides
-The final dataset includes daily global fields at ~9 km resolution for:
-
-
-Live and dead foliage
-
-
-Live and dead wood
-
-
-LFMC (combined, high vegetation, low vegetation)
-
-
-DFMC for foliage and wood
-
-
-These variables describe how fuel quantity and fuel dryness evolve in time and space, allowing daily assessment of landscape flammability and supporting simple fire-spread modelling.
-
-
-
-
-
+We generalize the <a href="https://doi.org/10.1139/x00-032" target="_blank">Nelson (2000)</a> physical model to estimate DFMC for standard dead-fuel classes (1h, 10h, 100h, 1000h). Short-lag fuels (1h, 10h) respond to fast humidity changes; long-lag fuels respond to multi-day weather patterns. DFMC for foliage and wood is derived by weighting appropriate fuel classes based on vegetation type.
 
 __Sources of ignitions__
 
 
+<div style="
+    border: 2px solid #003e74;
+    background: #eef3f8;
+    padding: 15px 20px;
+    border-radius: 6px;
+    margin: 25px 0;
+">
+  <h3 style="margin-top:0; color:#003e74;">🎯 Final result</h3>
+  <p style="margin:0; font-size:1.05em; color:#003e74;">
+    A set of environmental predictors and fire activity collocated dataset 
+  </p>
+</div>
