@@ -21,7 +21,6 @@
     <em>PoF in a BoX</em>
   </p>
 
-
 __PoF in a Box provides a ready-to-run set of notebooks designed to help you get started with your own Predictability of Fire (PoF) experiments. It includes all the tools, data access, and workflows needed to explore fire activity prediction, from input preparation to model evaluation—right out of the box.__
 <div style="border: 2px solid #9fc4ae; border-radius: 8px; padding: 10px; background-color: #f8fdf9;"> <b>Before you begin:</b> Please note that the workflow presented here is not intended to reproduce the exact operational system currently running at ECMWF. Instead, it provides a simplified sequence of steps designed to help you get started.
 The notebook can only be used with past forecasts—it will generate a tool that allows you to explore and analyse previous forecast data.
