@@ -30,10 +30,8 @@ Together, these __four variables__  describe both the availability of fuel and t
 __Fuel Data__
 
 
-<a href="https://www.nature.com/articles/s41467-025-58097-7" target="_blank">
- In absence of any other sorce fuel is the most important control globally on fire activity
-.</a>
-
+<a href="https://doi.org/10.1038/s41467-025-58097-7" target="_blank">
+ In absence of any other sorce fuel is the most important control globally on fire activity.</a>
 
 To model how vegetation influences wildfire behaviour, two key aspects must be captured: how much fuel is present and how dry that fuel is.
 
