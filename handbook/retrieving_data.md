@@ -55,7 +55,7 @@ We use a semi-empirical model, trained on the Globe-LFMC in-situ dataset, to est
 
 The model ensures physically realistic moisture ranges and captures seasonal vegetation responses to drought and growth cycles.
 
-<a href="https://doi.org/10.5194/bg-21-279-2024" target="_blank"> __Dead Fuel Moisture Content (DFMC)__ <\a>
+<a href="https://doi.org/10.5194/bg-21-279-2024" target="_blank"> __Dead Fuel Moisture Content (DFMC)__ </a>
 
 DFMC describes the moisture content of dead leaves, litter, and woody debris—fuels that respond directly to weather.
 We generalize the Nelson (2000) physical model to estimate DFMC for standard dead-fuel classes (1h, 10h, 100h, 1000h), driven by:
