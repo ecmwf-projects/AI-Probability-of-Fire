@@ -4,94 +4,44 @@ show-body-title: false
 ---
 
 
-<div style="border: 2px solid #9fc4ae; border-radius: 8px; padding: 10px; background-color: #f8fdf9;"> <b>Once the XGBoost model has been trained and validated, it can be used to generate daily Probability-of-Fire (PoF) forecasts based on the most recent environmental conditions.
+# Using Your PoF Model
+
+Now that you have gathered your data and trained your model, you can use it for historical or future fire–occurrence predictions.
+
+In this example, we generate predictions for an entire month using historical inputs. This type of prediction is often referred to as an **analysis prediction**, because it relies on observation-based data. An alternative—mirroring how PoF is used operationally at ECMWF—is to use *forecast* inputs. These are typically short-range (up to ~10 days), but the same workflow can be extended to seasonal, annual, or even decadal predictions.
+
+---
+
+<div style="text-align:center; margin:40px 0; font-weight:bold;">
+    Loading Data
 </div>
 
-The forecasting step mirrors the training workflow, but using future predictor data instead of historical observations.
+We begin by loading the previously trained model **POF_model.joblib**.
 
-__Inputs Required for a PoF Forecast__
+As with the training workflow, you must then load the required input data:
 
-To produce PoF forecasts, you must supply the model with the same set of predictors used during training, for example:
+- **Static data** (e.g., population, roads), which do not change with time.
+- **Time-varying data** (e.g., meteorological inputs, vegetation indices).  
+  This section also demonstrates how to load active fire data, which can be useful for evaluation.
 
-- ✔️ **Latest meteorological data**  
-- ✔️ **Fuel conditions**  
-- ✔️ **Ignition proxies** (population density, lightning forecasts)
+---
 
-All variables must be prepared in the same structure and units as during training.
-
-__How the Forecast Works__
-
-Collect predictors for the target date(s)
-
-This could include:
-
-ERA5 or NWP forecast weather fields
-
-Satellite-based fuel indices
-
-Drought indices updated daily or seasonally
-2. Assemble the feature vector
-The model expects a feature table identical in layout to the training input:
-[feature_1, feature_2, ..., feature_n]
-3. Apply the trained XGBoost model
-pof_forecast = model.predict_proba(X_future)[:, 1]
-This produces a probability between 0 and 1 for each grid cell or location.
-4. Visualise and interpret
-PoF forecasts can be displayed as:
-maps
-time series
-threshold exceedance alerts
-combined indicators (e.g., PoF × exposure)
-
-<div style="
-    border-left: 5px solid #003e74;
-    background: #f2f5fa;
-    padding: 12px 18px;
-    border-radius: 6px;
-    margin: 20px 0;
-">
-  <strong style="color:#003e74; font-size:1.15em;">🔍 How to interpret the forecast</strong>
-  <ul style="margin:10px 0 0 18px; color:#003e74;">
-    <li><strong>0.0–0.2</strong> → very low likelihood of fire</li>
-    <li><strong>0.2–0.4</strong> → conditions becoming conducive</li>
-    <li><strong>0.4–0.7</strong> → elevated fire potential; monitor closely</li>
-    <li><strong>0.7–1.0</strong> → high probability of ignition + spread if a trigger occurs</li>
-  </ul>
+<div style="text-align:center; margin:40px 0; font-weight:bold;">
+    Running the Prediction
 </div>
 
-These levels may be adapted to local forecast.
+After constructing a dataframe that matches the structure used during training, you can run the model in probability mode to estimate the likelihood of fire occurrence (`1`) using: model.predict_proba(X_pred)
 
-<div style="
-    border-left: 5px solid #003e74;
-    background: #f2f5fa;
-    padding: 12px 18px;
-    border-radius: 6px;
-    margin: 20px 0;
-">
-  <strong style="color:#003e74; font-size:1.1em;">
-    Once integrated into a workflow, the PoF model can be run:
-  </strong>
-  <ul style="margin:10px 0 0 18px; color:#003e74;">
-    <li><strong>Daily</strong>, using the latest environmental data</li>
-    <li><strong>In forecast  mode</strong>, using forecast if available</li>
-    <li><strong>In the past </strong>, as part of a past climate assessments</li>
-  </ul>
+
+---
+
+<div style="text-align:center; margin:40px 0; font-weight:bold;">
+    Saving Prediction as NetCDF
 </div>
 
-<div style="
-    border: 2px solid #003e74;
-    background: #eef3f8;
-    padding: 15px 20px;
-    border-radius: 6px;
-    margin: 25px 0;
-">
-  <h3 style="margin-top:0; color:#003e74;">🎯 Final result</h3>
-  <p style="margin:0; font-size:1.05em; color:#003e74;">
-    A fully operational PoF forecasting step that transforms up-to-date environmental
-    conditions into daily ignition-potential estimates
-  </p>
-</div>
+The final step is to save your prediction as a NetCDF file for further analysis or visualisation.  
+In this example, metadata is not included, but you can add variable attributes, CRS information, or global metadata as required.
 
+Your output file should be named:
 
-
-
+**POF_prediction_YYYY_MM.nc**

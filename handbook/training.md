@@ -1,25 +1,24 @@
 # ⭐ How we train an XGBoost Model for PoF
 
+PoF uses XGBoost, a powerful gradient-boosted decision-tree algorithm widely applied to tabular environmental data.
 
-PoF uses and  XGBoost, a powerful gradient-boosted decision-tree algorithm widely used for tabular environmental data.
-
-The training procedure follows a simple and reproducible workflow:
+The training procedure follows a simple, reproducible workflow based on a probabilistic classifier:
 
 __Prepare the training dataset__
 
-You will assemble a table where each row represents a day (or pixel-day) and includes:
+You will assemble a table where each row represents a gridcell in space and time (daily & 9km grid) and includes:
 
 <div style="border:1px solid #ccc; padding:10px 15px; border-radius:6px; background:#f8f8f8;">
   <strong>Predictors (features)</strong><br>
-  Fuel variables, meteorological variables, and ignition proxies (e.g., population density, lightning).
+  Fuel variables, meteorological variables, and ignition proxies. All of which are described in the retrieving_data documentation.
 </div>
 
 <div style="border:1px solid #ccc; padding:10px 15px; border-radius:6px; background:#f8f8f8;">
   <strong>Target (label)</strong><br>
-  Binary fire occurrence: <code>1</code> = fire detected, <code>0</code> = no fire.
+  Binary fire occurrence within the gridcell on the given day, where a single or multiple counts equate to fire detection: <code>1</code> = fire detected, <code>0</code> = no fire.
 </div>
 
-We will guide you through synthesising your data
+The data generation script should have synthesised your data into a DataFrame stored in a Parquet file, which is now ready for training.
 
 __Split the data__
 
@@ -27,12 +26,11 @@ __Split the data__
   <strong>Dataset Splits</strong><br>
   <ul style="margin:8px 0 0 15px;">
     <li><strong>Training set</strong> → used to fit the model</li>
-    <li><strong>Validation set</strong> → early stopping &amp; hyperparameter tuning</li>
     <li><strong>Test set</strong> → final skill evaluation</li>
   </ul>
 </div>
 
-We typically use a time-based split (train on past, test on future).
+We typically use a random stratified split.
 
 __Define the XGBoost model__
 
@@ -44,7 +42,6 @@ We configure the key parameters:
     <li><strong>max_depth</strong> – tree complexity</li>
     <li><strong>learning_rate</strong> – how fast the model learns</li>
     <li><strong>n_estimators</strong> – number of boosting rounds</li>
-    <li><strong>subsample</strong>, <strong>colsample_bytree</strong> – regularisation</li>
     <li><strong>objective="binary:logistic"</strong> – required to output probabilities</li>
   </ul>
 </div>
@@ -53,10 +50,7 @@ You will need to adjust these parameters depending on your region and data volum
 
 __Generate PoF predictions__
 
-Once trained, the model outputs:
-
-a probability between 0 and 1
-representing the likelihood that a fire will occur under the given conditions
+Once trained, the model outputs a probability between 0 and 1 representing the likelihood that at least one fire will occur under the given conditions withing a gridcell on a given day.
 
 <span style="color:#003e74; font-weight:600;">
 These are the core PoF predictions you will visualise and evaluate.
@@ -64,23 +58,17 @@ These are the core PoF predictions you will visualise and evaluate.
 
 __Evaluate the model__
 
-We assess the model skill using:
+We can assess the model skill using tools such as:
 ROC curve
 AUC score
 Reliability diagrams
-Precision–recall
 Confusion matrix
-Threshold analysis (operational cut-offs)
 
-However we only provide a exemples for a subset of these metrics 
+However we only provide examples for a subset of these metrics. Reliability methods are highly recommended given the unbalanced nature of PoF, however it is important to note these can be more computationally expensive than some other methods. 
 
-You will learn how to interpret these diagnostics in the context of fire risk.
-7. Save and reuse the model
-We show how to:
-save the trained XGBoost model (model.save_model())
-reload it for operations
-run the model on new daily environmental inputs
-This forms the operational PoF pipeline.
+Interpretation of these diagnostics in the context of fire risk needs to be carefully considered.
+
+The script saves the trained model for reuse (POF_model.joblib) . Later versions of XGboost may save as json or other file formats but can be saved and reused in the same or similar way.
 
 <div style="
     border: 2px solid #003e74;
