@@ -85,6 +85,7 @@ Around 90% of wildfires are human‑ignited, making human presence a useful indi
 
 The data provided here are derived from the <a href="https://doi.org/10.7927/H49C6VHW" target="_blank"> Gridded Population of the World, Version 4 (GPWv4) dataset</a>, which provides gridded population estimates at ~1 km resolution in 5-year intervals from 2000 to 2020.
 
+
 <div style="text-align:center; margin:40px 0; font-weight:bold;">
     Fire Data
 </div>
