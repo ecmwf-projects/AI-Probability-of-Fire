@@ -1,4 +1,8 @@
-## 🔮 Forecasting With PoF
+---
+title: "🔮 Forecasting With PoF"
+show-body-title: false
+---
+
 
 <div style="border: 2px solid #9fc4ae; border-radius: 8px; padding: 10px; background-color: #f8fdf9;"> <b>Once the XGBoost model has been trained and validated, it can be used to generate daily Probability-of-Fire (PoF) forecasts based on the most recent environmental conditions.
 </div>
