@@ -35,4 +35,4 @@ site:
   template: book-theme
   options:
      favicon: images/favicon.ico
-     logo: images/image.png
+     logo: images/PoF-in-a-box.png
