@@ -3,16 +3,15 @@
 
 __A  data driven model needs data__
 
-<div style="border: 2px solid #9fc4ae; border-radius: 8px; padding: 10px; background-color: #f8fdf9;"> <b>Please note: You will not be able to reproduce the exact configuration run at ECMWF, as it uses some proprietary data that we are unable to share. However, most of the data used to train PoF are publicly available and free to use. Below, we provide guidance on the datasets we recommend for getting started on your PoF journey.
-</div>
+:::{note}
+You will not be able to reproduce the exact configuration run at ECMWF, as it uses some proprietary data that we are unable to share. However, most of the data used to train PoF are publicly available and free to use. Below, we provide guidance on the datasets we recommend for getting started on your PoF journey.
+:::
 
-<p align="center" style="margin:40px 0;">
-  <img src="./images/data-sources-pof.png"
-       alt="Data Sources for PoF"
-       style="max-width:60%; height:auto;">
-  <br>
-  <span class="credits" style="font-size:13px; color:#666;">Data sources to train the PoF </span>
-</p>
+:::{figure} ./images/data-sources-pof.png
+:align: center
+:width: 70%
+Data sources to train the PoF
+:::
     
 <div style="text-align:center; margin:40px 0; font-weight:bold;">
     Weather Data
@@ -94,13 +93,7 @@ Various sensors and fire products are available for use in a PoF-style system. H
 
 Active fire (AF) detections were taken from the <a href="https://doi.org/10.1016/j.rse.2016.02.054" target="_blank"> MODIS MCD14ML product</a>, which provides daily fire hotspot locations based on thermal anomalies detected at 1 km resolution. These data were gridded to coarser daily resolution and represented as binary values (1 = at least one hotspot detected, 0 = none). We applied quality assurance flags to exclude low-confidence detections and removed spurious signals when possible.
 
-<div style="
-    border: 2px solid #003e74;
-    background: #eef3f8;
-    padding: 15px 20px;
-    border-radius: 6px;
-    margin: 25px 0;
-">
+:::{important}
   <h3 style="margin-top:0; color:#003e74;">🎯 Final result</h3>
   <p style="margin:0; font-size:1.05em; color:#003e74;">
     A set of environmental predictors and fire activity collocated dataset 

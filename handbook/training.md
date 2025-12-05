@@ -8,12 +8,16 @@ __Prepare the training dataset__
 
 You will assemble a table where each row represents a gridcell in space and time (daily & 9km grid) and includes:
 
-<div style="border:1px solid #ccc; padding:10px 15px; border-radius:6px; background:#f8f8f8;">
+---
+
+<div style="text-align:center; margin:40px 0; font-weight:bold;">
   <strong>Predictors (features)</strong><br>
   Fuel variables, meteorological variables, and ignition proxies. All of which are described in the retrieving_data documentation.
 </div>
 
-<div style="border:1px solid #ccc; padding:10px 15px; border-radius:6px; background:#f8f8f8;">
+---
+
+<div style="text-align:center; margin:40px 0; font-weight:bold;">
   <strong>Target (label)</strong><br>
   Binary fire occurrence within the gridcell on the given day, where a single or multiple counts equate to fire detection: <code>1</code> = fire detected, <code>0</code> = no fire.
 </div>
@@ -22,7 +26,9 @@ The data generation script should have synthesised your data into a DataFrame st
 
 __Split the data__
 
-<div style="border:1px solid #ccc; padding:10px 15px; border-radius:6px; background:#f8f8f8;">
+---
+
+<div style="text-align:center; margin:40px 0; font-weight:bold;">
   <strong>Dataset Splits</strong><br>
   <ul style="margin:8px 0 0 15px;">
     <li><strong>Training set</strong> → used to fit the model</li>
@@ -36,7 +42,9 @@ __Define the XGBoost model__
 
 We configure the key parameters:
 
-<div style="border:1px solid #ccc; padding:10px 15px; border-radius:6px; background:#f8f8f8;">
+---
+
+<div style="text-align:center; margin:40px 0; font-weight:bold;">
   <strong>XGBoost Hyperparameters</strong><br>
   <ul style="margin:8px 0 0 15px;">
     <li><strong>max_depth</strong> – tree complexity</li>
@@ -52,7 +60,7 @@ __Generate PoF predictions__
 
 Once trained, the model outputs a probability between 0 and 1 representing the likelihood that at least one fire will occur under the given conditions withing a gridcell on a given day.
 
-<span style="color:#003e74; font-weight:600;">
+<span style="color: var(--jp-brand-color0); font-weight: 600;">
 These are the core PoF predictions you will visualise and evaluate.
 </span>
 
@@ -70,13 +78,9 @@ Interpretation of these diagnostics in the context of fire risk needs to be care
 
 The script saves the trained model for reuse (POF_model.joblib) . Later versions of XGboost may save as json or other file formats but can be saved and reused in the same or similar way.
 
-<div style="
-    border: 2px solid #003e74;
-    background: #eef3f8;
-    padding: 15px 20px;
-    border-radius: 6px;
-    margin: 25px 0;
-">
+---
+
+<div style="text-align:center; margin:40px 0; font-weight:bold;">
   <h3 style="margin-top:0; color:#003e74;">🎯 Final result</h3>
   <p style="margin:0; font-size:1.05em; color:#003e74;">
     A trained, validated XGBoost model providing daily probability-of-fire estimates
