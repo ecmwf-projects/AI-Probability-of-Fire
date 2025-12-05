@@ -3,9 +3,11 @@ site:
   template: book-theme
   nav:
     - title: EWDS
-      url: http://ewds.climate.copernicus.eu
+      url: "http://ewds.climate.copernicus.eu"
+      external: true
     - title: XDS  
-      url: https://xds-preprod.ecmwf.int
+      url: "https://xds-preprod.ecmwf.int"
+      external: true
       # - title: Contribute
       #   url: /contribute
     # Commenting this out while there's a bug that adds BASE_URL to the nav links
