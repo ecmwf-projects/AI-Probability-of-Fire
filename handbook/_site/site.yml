@@ -1,11 +1,15 @@
+---
 version: 1
 site:
   template: book-theme
   nav:
-    - title: EWDS Portal
-      url: http://ewds.climate.copernicus.eu
-    - title: XDS  
-      url: https://xds-preprod.ecmwf.int
+    - title: Data Portals
+      children:
+      - title: EWDS Portal
+        url: http://ewds.climate.copernicus.eu
+      - title: XDS  
+        url: https://xds-preprod.ecmwf.int
+    
       # - title: Contribute
       #   url: /contribute
     # Commenting this out while there's a bug that adds BASE_URL to the nav links
