@@ -1,13 +1,13 @@
----
+------toc
 version: 1
 site:
   template: book-theme
   nav:
     - title: Data Portals
       children:
-      - title: EWDS Portal
-        url: http://ewds.climate.copernicus.eu
-      - title: XDS  
+      - title: Early Warning Data Store (EWDS)
+        url: https://ewds.climate.copernicus.eu
+      - title: Cross Data Store (XDS) 
         url: https://xds-preprod.ecmwf.int
     
       # - title: Contribute
