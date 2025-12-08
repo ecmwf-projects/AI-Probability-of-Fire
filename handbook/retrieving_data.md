@@ -32,6 +32,8 @@ Finally, __wind speed__ is the most dynamic and often the most dangerous factor.
 
 Together, these __four variables__  describe the conditions under which fires can ignite and spread. They provide a solid, intuitive foundation for understanding landscape flammability and are a suitable starting point for anyone beginning their PoF modelling journey. They also provide a data-driven alternative to the Fire Weather Index.
 
+---
+
 <div style="text-align:center; margin:40px 0; font-weight:bold;">
     Fuel Data
 </div>
@@ -68,6 +70,8 @@ The model ensures physically realistic moisture ranges and captures seasonal veg
 DFMC describes the moisture content of dead leaves, litter, and woody debris—fuels that respond directly to weather.
 We generalize the <a href="https://doi.org/10.1139/x00-032" target="_blank">Nelson (2000)</a> physical model to estimate DFMC for standard dead-fuel classes (1h, 10h, 100h, 1000h). Short-lag fuels (1h, 10h), which represent dead foliage, respond to fast humidity changes. Long-lag fuels (100h, 1000h), which represent dead wood, respond to multi-day weather patterns. DFMC for foliage and wood is derived by weighting appropriate fuel classes based on vegetation type.
 
+---
+
 <div style="text-align:center; margin:40px 0; font-weight:bold;">
     Sources of Ignitions
 </div>
@@ -84,6 +88,7 @@ Around 90% of wildfires are human‑ignited, making human presence a useful indi
 
 The data provided here are derived from the <a href="https://doi.org/10.7927/H49C6VHW" target="_blank"> Gridded Population of the World, Version 4 (GPWv4) dataset</a>, which provides gridded population estimates at ~1 km resolution in 5-year intervals from 2000 to 2020.
 
+---
 
 <div style="text-align:center; margin:40px 0; font-weight:bold;">
     Fire Data
