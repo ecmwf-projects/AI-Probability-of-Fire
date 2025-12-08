@@ -1,4 +1,4 @@
-------toc
+---
 version: 1
 site:
   template: book-theme
@@ -21,9 +21,3 @@ site:
         url: https://confluence.ecmwf.int/site/support
       - title: Report a bug 🐛
         url: https://github.com/ecmwf-projects/AI-Probability-of-Fire/issues
-  # options:
-  #   logo_url: /
-  #   favicon: https://raw.githubusercontent.com/jupyter-book/jupyter-book/refs/heads/main/docs/media/images/favicon.ico
-  #   logo: https://raw.githubusercontent.com/jupyter-book/jupyter-book/refs/heads/main/docs/media/images/logo.svg
-  #   logo_dark: https://raw.githubusercontent.com/jupyter-book/jupyter-book/refs/heads/main/docs/media/images/logo-dark.svg
-
