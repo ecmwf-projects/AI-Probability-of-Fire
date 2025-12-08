@@ -23,6 +23,10 @@ project:
       title: Forecasting
       children:
         - file: POF_Forecast.ipynb
+    - file: plotting.md
+      title: Plotting
+      children:
+        - file: POF_plotter.ipynb
 
 site:
   template: book-theme
