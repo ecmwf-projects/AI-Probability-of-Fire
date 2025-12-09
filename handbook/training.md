@@ -1,4 +1,4 @@
-# ⭐ How we train an XGBoost Model for PoF
+# How we train an XGBoost Model for PoF
 
 PoF uses XGBoost, a powerful gradient-boosted decision-tree algorithm widely applied to tabular environmental data.
 

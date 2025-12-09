@@ -1,5 +1,5 @@
 ---
-title: "🔮 Forecasting With PoF"
+title: "Forecasting With PoF"
 show-body-title: false
 ---
 

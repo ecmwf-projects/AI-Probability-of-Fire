@@ -1,4 +1,4 @@
-# 📦 The data behind PoF
+# The data behind PoF
 
 
 __A  data driven model needs data__
