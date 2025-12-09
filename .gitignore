@@ -1,6 +1,6 @@
 handbook/data
 handbook/outputs
 **/.ipynb_checkpoints/
-
+**/.DS_Store
 # MyST build outputs
 _build
