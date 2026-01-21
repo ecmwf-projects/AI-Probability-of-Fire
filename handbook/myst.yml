@@ -7,7 +7,7 @@ extends:
 project:
   id: ca4d97b9-09e7-4ed5-9230-9dee58e5201c
   title: "POF IN A BOX"
-  authors: ['Christopher Barnard', 'Joe McNorton', 'Francesca Di Giuseppe']
+  # authors: ['Christopher Barnard', 'Joe McNorton', 'Francesca Di Giuseppe']
   github: https://github.com/enyfeo/AI-Probability-of-Fire
 
   toc:
