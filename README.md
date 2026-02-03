@@ -1,6 +1,6 @@
 <p align="center">
   <picture>
-    <img src='https://github.com/ecmwf-projects/AI-Probability-of-Fire/blob/develop/handbook/images/PoF-in-a-box.png' height="180">
+    <img src='https://github.com/ecmwf-projects/AI-Probability-of-Fire/blob/develop/handbook/images/PoF-light.png' height="180">
   </picture>
 </p>
 
@@ -16,10 +16,11 @@ That said, we believe this provides a valuable starting point: a complete, worki
 ## Building the environment
 ```
 conda env create -f environment.yml
-conda activate POF_IN_A_BOX
+conda activate POF_BOOK
 ```
-## Building the Jupyter Book
+## Building the Jupyter Bookconda 
 ```
+cd handbook
 rm -rf _build
 jupyter-book build 
 ```
