@@ -1,6 +1,6 @@
 # Getting started
 
-In this book, we will show how you can create your own version of the <a href="https://doi.org/10.1029/2023GL107929" target="_blank"> Probability of Fire (PoF) </a> system. A pof in a box!
+In this book, we will show how you can create your own version of the <a href="https://doi.org/10.1029/2023GL107929" target="_blank"> Probability of Fire (PoF) </a> system. A PoF Toolbox!
 
 Before you begin, please note that the workflow presented here is not intended to reproduce the exact operational system currently running at ECMWF. Instead, it provides a simplified sequence of steps designed to help you get started.
 The notebook can only be used with past forecasts—it will generate a tool that allows you to explore and analyse previous forecast data.

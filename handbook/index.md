@@ -16,7 +16,7 @@ title: 🔥 Probability of Fire Jupyter Book
     text-align: center;
 ">
   <h1 style="margin:0; font-size: 2.5em; font-weight:600;">
-    🔥 Probability of Fire — Jupyter Book
+    🔥 Probability of Fire — Toolbox
   </h1>
   <p style="margin-top:10px; font-size:1.3em; opacity:0.95;">
     Reproducible notebooks for building local PoF models with your own data
@@ -26,10 +26,10 @@ title: 🔥 Probability of Fire Jupyter Book
 :::{figure} ./images/PoF-light.png
 :align: center
 :width: 70%
-POF Jupyter Book
+POF Toolbox
 :::
 
-__PoF Jupyter Book provides a ready-to-run set of notebooks designed to help you get started with your own Predictability of Fire (PoF) experiments. It includes all the tools, data access, and workflows needed to explore fire activity prediction, from input preparation to model evaluation.__
+__PoF Toolbox provides a ready-to-run set of notebooks designed to help you get started with your own Predictability of Fire (PoF) experiments. It includes all the tools, data access, and workflows needed to explore fire activity prediction, from input preparation to model evaluation.__
 :::{note} Before you begin: Please note that the workflow presented here is not intended to reproduce the exact operational system currently running at ECMWF. Instead, it provides a simplified sequence of steps designed to help you get started.
 :::
 
