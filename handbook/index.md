@@ -1,3 +1,12 @@
+---
+title: 🔥 Probability of Fire Jupyter Book
+# subtitle: Reproducible notebooks for building local PoF models with your own data
+---
+
+![logo](./images/ECMWF.png)
+
+<br>
+<!-- 
 <div style="
     background: linear-gradient(90deg, #003e74 0%, #006bb3 100%);
     padding: 35px 30px;
@@ -7,20 +16,20 @@
     text-align: center;
 ">
   <h1 style="margin:0; font-size: 2.5em; font-weight:600;">
-    🔥 Probability of Fire — In a Box
+    🔥 Probability of Fire — Jupyter Book
   </h1>
   <p style="margin-top:10px; font-size:1.3em; opacity:0.95;">
     Reproducible notebooks for building local PoF models with your own data
   </p>
 </div>
 
-:::{figure} ./images/PoF-in-a-box.png
+:::{figure} ./images/PoF-light.png
 :align: center
 :width: 70%
-PoF in a BoX
+POF Jupyter Book
 :::
 
-__PoF in a Box provides a ready-to-run set of notebooks designed to help you get started with your own Predictability of Fire (PoF) experiments. It includes all the tools, data access, and workflows needed to explore fire activity prediction, from input preparation to model evaluation—right out of the box.__
+__PoF Jupyter Book provides a ready-to-run set of notebooks designed to help you get started with your own Predictability of Fire (PoF) experiments. It includes all the tools, data access, and workflows needed to explore fire activity prediction, from input preparation to model evaluation.__
 :::{note} Before you begin: Please note that the workflow presented here is not intended to reproduce the exact operational system currently running at ECMWF. Instead, it provides a simplified sequence of steps designed to help you get started.
 :::
 
@@ -28,7 +37,7 @@ The notebook can only be used with past forecasts—it will generate a tool that
 That said, we believe this provides a valuable starting point: a complete, working system built entirely from data that are publicly available through the Climate Data Store (CDS) or accessible via temporary data repositories linked within this notebook. 
 
 
-## Wildfire prediction  
+# Wildfire prediction  
 
 Given their chaotic nature, how can we know when and where wildfires will occur? That is a question that has puzzled wildfire forecasters for decades and now, thanks to advances in <a href="https://doi.org/10.1029/2023GL107929" target="_blank"> **machine learning**</a>, we are one step closer to answering it, although we still have some way to go.
  
@@ -36,7 +45,8 @@ The topic of **wildfire forecasting** is not a new one. However, in recent years
 
 These events have far-reaching consequences for both air quality and greenhouse gas emissions
 
-## Traditional fire forecasting
+# Traditional fire forecasting
+
 For nearly half a century, fire danger forecasts have relied on a method that links weather conditions with fire activity to create an index of fire risk, with the <a href="https://cwfis.cfs.nrcan.gc.ca/background/summary/fwi" target="_blank"> **Canadian Fire Weather Index (FWI)**</a>
  being the most widely used. However, this approach has its limitations. 
  
