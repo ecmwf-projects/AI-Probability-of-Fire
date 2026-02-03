@@ -1,4 +1,4 @@
-name: POF_IN_A_BOX
+name: POF_BOOK
 channels:
 - conda-forge
 - nodefaults
