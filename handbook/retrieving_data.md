@@ -43,7 +43,7 @@ In absence of any other source, fuel is the most important control globally on f
 
 To model how vegetation influences wildfire behaviour, two key aspects must be captured, how much fuel is present and how dry that fuel is.
 
-<a href="https://doi.org/10.5194/bg-21-279-2024" target="_blank"> __Fuel load__ represents the total mass of above-ground biomass available to burn. </a> It includes:
+<a href="https://doi.org/10.5194/bg-21-279-2024" target="_blank"> __Fuel load__ </a> represents the total mass of above-ground biomass available to burn. It includes:
 
 🌿 Foliage (live and dead)
 🌳 Wood (live and dead)
@@ -52,9 +52,9 @@ We estimate fuel load by combining Satellite-derived Above-Ground Biomass (AGB) 
 
 This approach allows us to reconstruct daily biomass evolution at ~9 km resolution. AGB is then partitioned into live and dead components using vegetation-type-specific ratios and leaf area index. This gives a dynamic estimate of foliage and wood fuel loads, consistent with fire-modelling practices.
 
-<a href="https://doi.org/10.5194/bg-21-279-2024" target="_blank"> __Fuel moisture  represents the total mass of biomass with respect to water. </a> It is usually divided in the moisture of the linving plant and the moisture in dead biomass 
+<a href="https://doi.org/10.5194/bg-21-279-2024" target="_blank"> __Fuel moisture__ </a>  represents the total mass of biomass with respect to water. It is usually divided in the moisture of the linving plant and the moisture in dead biomass 
 
-<a href="https://doi.org/10.5194/bg-21-279-2024" target="_blank"> __Live Fuel Moisture Content (LFMC)__ </a>
+__Live Fuel Moisture Content (LFMC)__
 
 💦🍃 LFMC expresses how much water is contained in living vegetation relative to its dry mass. It determines how easily plants ignite and how fast a fire can spread.
 We use a semi-empirical model, trained on the <a href="https://doi.org/10.1038/s41597-019-0164-9" target="_blank"> Globe-LFMC in-situ dataset</a>, to estimate daily LFMC from:
