@@ -20,9 +20,9 @@ Data sources to train the PoF
 <a href="https://doi.org/10.1175/JAMC-D-15-0297.1" target="_blank">
 In fuel-rich environments, weather is the dominant control of fire behaviour.</a>
 
-To begin your data collection, we recommend focusing on four key environmental variables: __temperature, precipitation, relative humidity, and wind speed.__ These variables represent the fundamental controls of how fire behaviour, and they are at the core of nearly all fire-weather indices used operationally around the world.
+To begin your data collection, we recommend focusing on four key environmental variables: __temperature, precipitation, relative humidity, and wind speed.__ These variables represent the fundamental controls of how fire behaviour, and they are at the core of nearly all fire-weather indices used operationally around the world. Each variable plays a distinct role in shaping landscape flammability. 
 
-Each variable plays a distinct role in shaping landscape flammability. Temperature is one of the most immediate drivers: as temperatures rise, vegetation and soils lose moisture more quickly, and both live and dead fuels become more prone to ignition. Prolonged warm conditions can push even healthy vegetation into moisture stress, making it more combustible.
+__Temperature__ is one of the most immediate drivers: as temperatures rise, vegetation and soils lose moisture more quickly, and both live and dead fuels become more prone to ignition. Prolonged warm conditions can push even healthy vegetation into moisture stress, making it more combustible.
 
 __Precipitation__ acts in the opposite direction. It replenishes moisture in fuels and slows the drying process, reducing the likelihood that a spark will result in a fire. But precipitation also shapes fire risk over longer periods. <a href="https://doi.org/10.1111/gcb.70481" target="_blank"> Wet springs or wet years stimulate vegetation growth, building up large fuel loads which can later burn if drought conditions return. </a>
 
@@ -51,6 +51,8 @@ To model how vegetation influences wildfire behaviour, two key aspects must be c
 We estimate fuel load by combining Satellite-derived Above-Ground Biomass (AGB) from ESA-CCI (2010 baseline), and Daily Net Ecosystem Exchange (NEE) from the ECLand land-surface model (forced by ERA5) with <a href="https://doi.org/10.5194/acp-16-10399-2016" target="_blank"> bias correction from atmospheric inversions. </a>
 
 This approach allows us to reconstruct daily biomass evolution at ~9 km resolution. AGB is then partitioned into live and dead components using vegetation-type-specific ratios and leaf area index. This gives a dynamic estimate of foliage and wood fuel loads, consistent with fire-modelling practices.
+
+<a href="https://doi.org/10.5194/bg-21-279-2024" target="_blank"> __Fuel moisture  represents the total mass of biomass with respect to water. </a> It is usually divided in the moisture of the linving plant and the moisture in dead biomass 
 
 <a href="https://doi.org/10.5194/bg-21-279-2024" target="_blank"> __Live Fuel Moisture Content (LFMC)__ </a>
 
@@ -96,7 +98,7 @@ The data provided here are derived from the <a href="https://doi.org/10.7927/H49
 
 Various sensors and fire products are available for use in a PoF-style system. Here we attempt a binary classifier model, that is an indication of the probability of a fire yes/no. As such we use hotspot detections rather than burned area.
 
-Active fire (AF) detections were taken from the <a href="https://doi.org/10.1016/j.rse.2016.02.054" target="_blank"> MODIS MCD14ML product</a>, which provides daily fire hotspot locations based on thermal anomalies detected at 1 km resolution. These data were gridded to coarser daily resolution and represented as binary values (1 = at least one hotspot detected, 0 = none). We applied quality assurance flags to exclude low-confidence detections and removed spurious signals when possible.
+__Active fire (AF)__ detections were taken from the <a href="https://doi.org/10.1016/j.rse.2016.02.054" target="_blank"> MODIS MCD14ML product</a>, which provides daily fire hotspot locations based on thermal anomalies detected at 1 km resolution. These data were gridded to coarser daily resolution and represented as binary values (1 = at least one hotspot detected, 0 = none). We applied quality assurance flags to exclude low-confidence detections and removed spurious signals when possible.
 
 :::{important}
   <h3 style="margin-top:0; color:#003e74;">🎯 Final result</h3>
