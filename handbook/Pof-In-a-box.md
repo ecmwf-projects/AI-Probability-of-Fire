@@ -7,5 +7,5 @@ The notebook showcases an exemple with past forecasts. It will generate a tool t
 That said, we believe this provides a valuable starting point: a complete, working system built entirely from data that are publicly available through the Climate Data Store (CDS) or accessible via temporary data repositories linked within this notebook. From here you can explore new way to use the notebooks and even create your own forecasting system!
 
 
-<img src='./images/pof.png' height="400">
+<img src='./images/pof-light.png' height="400">
 
