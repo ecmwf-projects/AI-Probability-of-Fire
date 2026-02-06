@@ -27,6 +27,8 @@ project:
       title: Plotting
       children:
         - file: POF_plotter.ipynb
+    - file: end.md
+      title: Conclusion
 
 site:
   template: book-theme
