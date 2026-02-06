@@ -4,6 +4,11 @@
   </picture>
 </p>
 
+[![Static Badge](https://github.com/ecmwf/codex/raw/refs/heads/main/Project%20Maturity/sandbox_badge.svg)](https://github.com/ecmwf/codex/raw/refs/heads/main/Project%20Maturity#sandbox)
+
+> \[!IMPORTANT\]
+> This software is **Sandbox** and subject to ECMWF's guidelines on [Software Maturity](https://github.com/ecmwf/codex/raw/refs/heads/main/Project%20Maturity).
+
 # Getting started
 
 In this book, we will show how you can create your own version of the Probability of Fire (PoF) system.
