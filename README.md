@@ -33,7 +33,10 @@ jupyter-book build
 ```
 jupyter-book start
 ```
+# Support
 
+Please Note:
+Please feel free to contact us, however ECMWF does not provide any official support for these Notebooks.
 
 # Licence
 
